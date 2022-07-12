@@ -5,7 +5,6 @@
 // ready for the next exercise, remove the `I AM NOT DONE` comment below.
 // Execute the command `rustlings hint intro1` for a hint.
 
-<<<<<<< HEAD
 
 =======
 >>>>>>> 90fab5c (2022/7/17/14.12)
