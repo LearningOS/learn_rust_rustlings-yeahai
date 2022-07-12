@@ -7,7 +7,7 @@
 
 
 
->>>>>>> 90fab5c (2022/7/17/14.12)
+
 
 fn main() {
     println!("Hello and");

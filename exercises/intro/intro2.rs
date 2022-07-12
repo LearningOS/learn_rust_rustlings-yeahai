@@ -11,5 +11,5 @@ fn main() {
 
 fn main() {
     println!("Hello!");
->>>>>>> 90fab5c (2022/7/17/14.12)
+
 }
