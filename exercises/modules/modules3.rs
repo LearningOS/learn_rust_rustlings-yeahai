@@ -5,10 +5,17 @@
 // from the std::time module. Bonus style points if you can do it with one line!
 // Make me compile! Execute `rustlings hint modules3` for hints :)
 
+<<<<<<< HEAD
 // I AM NOT DONE
 
 // TODO: Complete this use statement
 use ???
+=======
+
+// TODO: Complete this use statement
+use std::time::UNIX_EPOCH;
+use std::time::SystemTime;
+>>>>>>> 90fab5c (2022/7/17/14.12)
 
 fn main() {
     match SystemTime::now().duration_since(UNIX_EPOCH) {

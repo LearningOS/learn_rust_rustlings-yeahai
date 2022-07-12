@@ -16,8 +16,11 @@
 // 4. Complete the partial implementation of `Display` for
 //    `ParseClimateError`.
 
+<<<<<<< HEAD
 // I AM NOT DONE
 
+=======
+>>>>>>> 90fab5c (2022/7/17/14.12)
 use std::error::Error;
 use std::fmt::{self, Display, Formatter};
 use std::num::{ParseFloatError, ParseIntError};
@@ -46,7 +49,11 @@ impl From<ParseIntError> for ParseClimateError {
 // `ParseFloatError` values.
 impl From<ParseFloatError> for ParseClimateError {
     fn from(e: ParseFloatError) -> Self {
+<<<<<<< HEAD
         // TODO: Complete this function
+=======
+        Self::ParseFloat(e)
+>>>>>>> 90fab5c (2022/7/17/14.12)
     }
 }
 
@@ -64,10 +71,21 @@ impl Display for ParseClimateError {
         match self {
             NoCity => write!(f, "no city name"),
             ParseFloat(e) => write!(f, "error parsing temperature: {}", e),
+<<<<<<< HEAD
+=======
+            ParseInt(e) => write!(f, "error parsing year: {}", e),
+            Empty => write!(f, "empty input"),
+            BadLen => write!(f, "incorrect number of fields"),
+>>>>>>> 90fab5c (2022/7/17/14.12)
         }
     }
 }
 
+<<<<<<< HEAD
+=======
+impl Error for ParseClimateError {}
+
+>>>>>>> 90fab5c (2022/7/17/14.12)
 #[derive(Debug, PartialEq)]
 struct Climate {
     city: String,
@@ -88,11 +106,25 @@ impl FromStr for Climate {
     // TODO: Complete this function by making it handle the missing error
     // cases.
     fn from_str(s: &str) -> Result<Self, Self::Err> {
+<<<<<<< HEAD
+=======
+        if s.is_empty() {
+            return Err(ParseClimateError::Empty);
+        }
+
+>>>>>>> 90fab5c (2022/7/17/14.12)
         let v: Vec<_> = s.split(',').collect();
         let (city, year, temp) = match &v[..] {
             [city, year, temp] => (city.to_string(), year, temp),
             _ => return Err(ParseClimateError::BadLen),
         };
+<<<<<<< HEAD
+=======
+
+        if city.is_empty() {
+            return Err(ParseClimateError::NoCity);
+        }
+>>>>>>> 90fab5c (2022/7/17/14.12)
         let year: u32 = year.parse()?;
         let temp: f32 = temp.parse()?;
         Ok(Climate { city, year, temp })
@@ -199,4 +231,8 @@ mod test {
         assert!(inner.is_some());
         assert!(inner.unwrap().is::<ParseIntError>());
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 90fab5c (2022/7/17/14.12)

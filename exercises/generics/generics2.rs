@@ -3,6 +3,7 @@
 
 // Execute `rustlings hint generics2` for hints!
 
+<<<<<<< HEAD
 // I AM NOT DONE
 
 struct Wrapper {
@@ -11,6 +12,15 @@ struct Wrapper {
 
 impl Wrapper {
     pub fn new(value: u32) -> Self {
+=======
+
+struct Wrapper<T> {
+    value: T,
+}
+
+impl<T> Wrapper<T> {
+    pub fn new(value: T) -> Self {
+>>>>>>> 90fab5c (2022/7/17/14.12)
         Wrapper { value }
     }
 }

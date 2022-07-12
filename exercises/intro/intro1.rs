@@ -5,7 +5,10 @@
 // ready for the next exercise, remove the `I AM NOT DONE` comment below.
 // Execute the command `rustlings hint intro1` for a hint.
 
+<<<<<<< HEAD
 // I AM NOT DONE
+=======
+>>>>>>> 90fab5c (2022/7/17/14.12)
 
 fn main() {
     println!("Hello and");

@@ -1,6 +1,9 @@
 // iterators4.rs
 
+<<<<<<< HEAD
 // I AM NOT DONE
+=======
+>>>>>>> 90fab5c (2022/7/17/14.12)
 
 pub fn factorial(num: u64) -> u64 {
     // Complete this function to return the factorial of num
@@ -12,6 +15,11 @@ pub fn factorial(num: u64) -> u64 {
     // For an extra challenge, don't use:
     // - recursion
     // Execute `rustlings hint iterators4` for hints.
+<<<<<<< HEAD
+=======
+    (1..num+1).product()
+    // (1..num+1).fold(1,|sum,v| sum*v)
+>>>>>>> 90fab5c (2022/7/17/14.12)
 }
 
 #[cfg(test)]

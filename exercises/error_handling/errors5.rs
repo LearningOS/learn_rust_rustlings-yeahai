@@ -4,14 +4,21 @@
 // It won't compile right now! Why?
 // Execute `rustlings hint errors5` for hints!
 
+<<<<<<< HEAD
 // I AM NOT DONE
+=======
+>>>>>>> 90fab5c (2022/7/17/14.12)
 
 use std::error;
 use std::fmt;
 use std::num::ParseIntError;
 
 // TODO: update the return type of `main()` to make this compile.
+<<<<<<< HEAD
 fn main() -> Result<(), ParseIntError> {
+=======
+fn main() -> Result<(), Box<dyn error::Error>> {
+>>>>>>> 90fab5c (2022/7/17/14.12)
     let pretend_user_input = "42";
     let x: i64 = pretend_user_input.parse()?;
     println!("output={:?}", PositiveNonzeroInteger::new(x)?);
@@ -50,4 +57,10 @@ impl fmt::Display for CreationError {
     }
 }
 
+<<<<<<< HEAD
 impl error::Error for CreationError {}
+=======
+impl error::Error for CreationError {
+
+}
+>>>>>>> 90fab5c (2022/7/17/14.12)
