@@ -7,19 +7,12 @@
 // Execute the command `rustlings hint vec2` if you need
 // hints.
 
-<<<<<<< HEAD
-// I AM NOT DONE
-=======
->>>>>>> 90fab5c (2022/7/17/14.12)
 
 fn vec_loop(mut v: Vec<i32>) -> Vec<i32> {
     for i in v.iter_mut() {
         // TODO: Fill this up so that each element in the Vec `v` is
         // multiplied by 2.
-<<<<<<< HEAD
-=======
         *i = *i * 2;
->>>>>>> 90fab5c (2022/7/17/14.12)
     }
 
     // At this point, `v` should be equal to [4, 8, 12, 16, 20].

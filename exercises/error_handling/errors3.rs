@@ -4,16 +4,6 @@
 // Why not? What should we do to fix it?
 // Execute `rustlings hint errors3` for hints!
 
-<<<<<<< HEAD
-// I AM NOT DONE
-
-use std::num::ParseIntError;
-
-fn main() {
-    let mut tokens = 100;
-    let pretend_user_input = "8";
-
-=======
 
 use std::num::ParseIntError;
 
@@ -22,7 +12,6 @@ fn main() ->Result<(),ParseIntError> {
     let pretend_user_input = "8";
 
     // let cost = total_cost(pretend_user_input).unwrap();
->>>>>>> 90fab5c (2022/7/17/14.12)
     let cost = total_cost(pretend_user_input)?;
 
     if cost > tokens {
@@ -31,10 +20,7 @@ fn main() ->Result<(),ParseIntError> {
         tokens -= cost;
         println!("You now have {} tokens.", tokens);
     }
-<<<<<<< HEAD
-=======
     Ok(())
->>>>>>> 90fab5c (2022/7/17/14.12)
 }
 
 pub fn total_cost(item_quantity: &str) -> Result<i32, ParseIntError> {

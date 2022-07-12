@@ -2,10 +2,6 @@
 // Fill in the rest of the line that has code missing!
 // No hints, there's no tricks, just get used to typing these :)
 
-<<<<<<< HEAD
-// I AM NOT DONE
-=======
->>>>>>> 90fab5c (2022/7/17/14.12)
 
 fn main() {
     // Characters (`char`)
@@ -19,11 +15,7 @@ fn main() {
         println!("Neither alphabetic nor numeric!");
     }
 
-<<<<<<< HEAD
-    let // Finish this line like the example! What's your favorite character?
-=======
     let your_character = '@'; // Finish this line like the example! What's your favorite character?
->>>>>>> 90fab5c (2022/7/17/14.12)
     // Try a letter, try a number, try a special character, try a character
     // from a different language than your own, try an emoji!
     if your_character.is_alphabetic() {

@@ -6,14 +6,8 @@
 // of "waiting..." and the program ends without timing out when running,
 // you've got it :)
 
-<<<<<<< HEAD
-// I AM NOT DONE
-
-use std::sync::Arc;
-=======
 
 use std::sync::{Arc, Mutex};
->>>>>>> 90fab5c (2022/7/17/14.12)
 use std::thread;
 use std::time::Duration;
 
@@ -22,27 +16,16 @@ struct JobStatus {
 }
 
 fn main() {
-<<<<<<< HEAD
-    let status = Arc::new(JobStatus { jobs_completed: 0 });
-=======
     let status = Arc::new(Mutex::new(JobStatus {  jobs_completed: 0 }));
->>>>>>> 90fab5c (2022/7/17/14.12)
     let status_shared = status.clone();
     thread::spawn(move || {
         for _ in 0..10 {
             thread::sleep(Duration::from_millis(250));
-<<<<<<< HEAD
-            status_shared.jobs_completed += 1;
-        }
-    });
-    while status.jobs_completed < 10 {
-=======
             let mut job_status = status_shared.lock().unwrap();
             job_status.jobs_completed += 1;
         }
     });
     while status.lock().unwrap().jobs_completed < 10 {
->>>>>>> 90fab5c (2022/7/17/14.12)
         println!("waiting... ");
         thread::sleep(Duration::from_millis(500));
     }

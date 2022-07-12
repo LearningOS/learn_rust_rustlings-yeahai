@@ -1,9 +1,5 @@
 // if1.rs
 
-<<<<<<< HEAD
-// I AM NOT DONE
-=======
->>>>>>> 90fab5c (2022/7/17/14.12)
 
 pub fn bigger(a: i32, b: i32) -> i32 {
     // Complete this function to return the bigger number!
@@ -11,14 +7,11 @@ pub fn bigger(a: i32, b: i32) -> i32 {
     // - another function call
     // - additional variables
     // Execute `rustlings hint if1` for hints
-<<<<<<< HEAD
-=======
     if a > b {
         a
     }else{
         b
     }
->>>>>>> 90fab5c (2022/7/17/14.12)
 }
 
 // Don't mind this for now :)

@@ -6,19 +6,10 @@
 // check clippy's suggestions from the output to solve the exercise.
 // Execute `rustlings hint clippy1` for hints :)
 
-<<<<<<< HEAD
-// I AM NOT DONE
-
 use std::f32;
 
-fn main() {
-    let pi = 3.14f32;
-=======
-use std::f32;
-//
 fn main() {
     let pi = std::f32::consts::PI;
->>>>>>> 90fab5c (2022/7/17/14.12)
     let radius = 5.00f32;
 
     let area = pi * f32::powi(radius, 2);
