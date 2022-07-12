@@ -6,7 +6,7 @@
 // Execute the command `rustlings hint intro1` for a hint.
 
 
-=======
+
 >>>>>>> 90fab5c (2022/7/17/14.12)
 
 fn main() {
