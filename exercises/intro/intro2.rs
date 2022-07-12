@@ -3,7 +3,7 @@
 // Execute `rustlings hint intro2` for a hint.
 
 <<<<<<< HEAD
-// I AM NOT DONE
+
 
 fn main() {
     println!("Hello {}!");
